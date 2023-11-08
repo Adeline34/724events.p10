@@ -28,7 +28,7 @@ export const DataProvider = ({ children }) => {
   }, []);
 
   const events = data?.events;
-  const sortEvents = events?.sort((evtA, evtB) => new Date(evtA.date) > new Date(evtB.date) ? -1 : 1);
+  const sortEvents = events?.sort((evtA, evtB) => new Date(evtB.date) > new Date(evtA.date) ? -1 : 1);
   const last = sortEvents?.[0];
 
   useEffect(() => {
