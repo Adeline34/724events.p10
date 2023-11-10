@@ -30,8 +30,8 @@ const Form = ({ onSuccess, onError }) => {
     <form onSubmit={sendContact}>
       <div className="row">
         <div className="col">
-          <Field placeholder="" label="Nom" />
-          <Field placeholder="" label="Prénom" />
+          <Field placeholder="Nom" label="Nom" />
+          <Field placeholder="Prénom" label="Prénom" />
           <Select
             required
             selection={["Personnel", "Entreprise"]}
